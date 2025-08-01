@@ -13,6 +13,18 @@ fetch('ceillimock_set1.json') // Update filename if needed
     displayQuestion(currentQuestion);
   });
 
+
+// === Load Motivational Quote ===
+fetch('quotes.json')
+  .then(res => res.json())
+  .then(quotes => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quoteBox = document.getElementById('quote-box');
+    if (quoteBox) {
+      quoteBox.textContent = quotes[randomIndex];
+    }
+  });
+
 function displayQuestion(num) {
   const q = questions[num - 1];
   if (!q) return;
@@ -156,3 +168,4 @@ function dismissResumeBanner() {
     banner.style.display = 'none';
   }
 }
+

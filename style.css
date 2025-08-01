@@ -226,3 +226,16 @@ input[type="number"] {
   color: #777;
   margin-left: 4px;
 }
+
+/* ==== MOTIVATIONAL QUOTE BOX ==== */
+.quote-box {
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+  background-color: #f9f9f9;
+  padding: 10px 16px;
+  border-left: 4px solid #cce3dc;
+  border-radius: 6px;
+  margin: -10px 0 20px 0;
+  text-align: left;
+}

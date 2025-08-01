@@ -246,3 +246,25 @@ input[type="number"] {
   color: #aaa;
   margin: 0 4px;
 }
+
+.quote-pill {
+  background: #eef6ff;
+  border: 1px solid #cfe2ff;
+  color: #1d4f91;
+  padding: 10px 20px;
+  margin: 0 auto 30px auto;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 999px; /* pill shape */
+  font-size: 15px;
+  font-style: italic;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  line-height: 1.4;
+}
+
+.quote-pill .quote-mark {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9bb7dd;
+  margin: 0 4px;
+}

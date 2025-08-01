@@ -14,14 +14,15 @@ fetch('ceillimock_set3.json') // Update filename if needed
   });
 
 
-// === Load Motivational Quote ===
+// === Load Motivational Quote with big “ ===
 fetch('quotes.json')
   .then(res => res.json())
   .then(quotes => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quoteBox = document.getElementById('quote-box');
     if (quoteBox) {
-      quoteBox.textContent = quotes[randomIndex];
+      const quote = quotes[randomIndex];
+      quoteBox.innerHTML = `<span class="quote-mark">“</span>${quote}<span class="quote-mark">”</span>`;
     }
   });
 

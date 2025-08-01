@@ -239,3 +239,10 @@ input[type="number"] {
   margin: -10px 0 20px 0;
   text-align: left;
 }
+
+.quote-mark {
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  margin: 0 4px;
+}
